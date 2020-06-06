@@ -16,7 +16,7 @@ public class Student {
 	// Constructor: prompt user to enter student's name and year
 	public Student() {
 		Scanner in = new Scanner(System.in);
-		System.out.print("Enter student's first name: "); //Remove white spaces? 
+		System.out.print("\nEnter student's first name: "); //Remove white spaces? 
 		this.firstName = in.nextLine();
 		
 		System.out.print("Enter student's last name: ");
@@ -44,7 +44,7 @@ public class Student {
 		Scanner in = new Scanner(System.in);
 		String course = in.nextLine();
 		if (!course.equals("Q")) {
-			courses = courses + "\n" + course;
+			courses = courses + "\n " + course;
 			tuitionBalance = tuitionBalance + costOfCourse;
 		}
 		else { break; } 
